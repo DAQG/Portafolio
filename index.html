@@ -1,42 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Quishpe</title>
-    <meta name="descripcion" content="Primer portafolio con Visual Studio Code:Daniel Quishpe">
-    <meta name="robots" content="index,follow">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+
+    <!-- https://fontawesome.com/icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- https://fonts.google.com/specimen/Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- https://www.flaticon.es/ -->
+    <link rel="shortcut icon"
+        href="https://img.freepik.com/vector-premium/codigo-programacion-fondo-codificacion-o-hacker-icono-codigo-programacion-hecho-codigo-binario_127544-815.jpg"
+        type="image/x-icon">
+
+    <title>Portfolio Daniel Quishpe</title>
+
 </head>
+
 <body>
-    <TABLE >
-        <TR>
-            <TD ROWSPAN=2><img src="mio.png"    width="100" height="100"></TD>
-            <TD COLSPAN=2>DANIEL ANDRES QUISHPE GUAÑUNA</TD>
-        </TR>
-        <TR>
-            <TD COLSPAN=2>ESTUDIANTE DESARROLLO DE SOFTWARE</TD>
-        </TR>
-    </TABLE>
-    <P>Desarrollarme dentro deuna empresa que me permita adquirir conocimientos y experiencia,<br>
-        al mismo tiempo que me la oportunidad de aportar mis habilidades en lo que sea nesesario para la empresa...</P>
-        <hr>
-        <div class="nav-bg">
-            <nav class="navegacion-principal contenedor">
-                <a href="#Estudios">Inicio |</a>
-                <a href="#servicios">Sobre Mi |</a>
-                <a href="#">Estudios |</a>
-                <a href="#">Proyectos |</a>
-                <a href="#">Clientes</a>
-                <a href="#contacto">Contactos</a>
-            </nav>
+
+    <!-- HEADER SECTION SATRTS -->
+    <header class="header">
+
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">Daniel Quishpe</div>
+                <ul class="menu">
+                    <li><a href="#navbar">Inicio</li>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#about">Sobre mi</a></li>
+                    <li><a href="#expert">Experiencia</a></li>
+                    <li><a href="#contact">Contactos</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="showcase">
+            <div class="container-2">
+                <div class="showcase-box">
+                    <h1><span id="typed1"></span></h1>
+                    <a href="#portfolio" class="btn btn-light">Portafolio</a>
+                </div>
+            </div>
         </div>
 
-    <footer>
-        <a href=" daniel.quishpe@epn.edu.ec" > Contacto</a>
-        <p>Copyrigth 2023-Daniel</p>
+    </header>
+    <!-- HEADER SECTION ENDS -->
 
+
+
+    <!-- MAIN SECTION STARTS  -->
+    <main class="main">
+
+        <!-- ABOUT SECTION STARTS  -->
+        <section class="about container" id="about">
+            <div class="about__texts">
+                <h2 class="title">¿Quién soy?</h2>
+                <p class="about__paragraph"><span id="typed2"></span></p>
+                <a href="https://cheerful-fairy-fd38b8.netlify.app" class="btn btn-about">curriculum vitae</a>
+            </div>
+            <figure class="about__img">
+                <img src="./images/programador.jpg" class="about__picture" alt="chica-code">
+            </figure>
+        </section>
+        <!-- ABOUT SECTION ENDS  -->
+
+
+
+        <!-- PORTFOLIO SECTION STARTS  -->
+        <section class="portfolio" id="portfolio">
+            <div class="portfolio__container container">
+
+                <h2 class="title">Mis proyectos</h2>
+
+                <div class="portfolio__cards">
+                    <article class="portfolio__card">
+                        <img src="./images/portfolio-1.jpg" class="portfolio__picture" alt="project-one">
+                        <div class="portfolio__texts">
+                            <h3 class="portfolio__title">Proyecto - 1</h3>
+                            <h3 class="portfolio__title">Conexion con base de datos NoSQL</h3>
+                            <p class="portfolio__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Minus tempore voluptatem quis in eaque obcaecati optio impedit numquam ex quos.</p>
+                            <a href="#" class="btn btn-portfolio">Más información</a>
+                        </div>
+                    </article>
+
+                    <article class="portfolio__card">
+                        <img src="./images/portfolio-2.jpg" class="portfolio__picture" alt="project-two">
+                        <div class="portfolio__texts">
+                            <h3 class="portfolio__title">Proyecto - 2</h3>
+                            <h3 class="portfolio__title">Conexion de interfaces</h3>
+                            <p class="portfolio__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Minus tempore voluptatem quis in eaque obcaecati optio impedit numquam ex quos.</p>
+                            <a href="#" class="btn btn-portfolio">Más información</a>
+                        </div>
+                    </article>
+
+                    <article class="portfolio__card">
+                        <img src="./images/portfolio-3.jpg" class="portfolio__picture" alt="project-three">
+                        <div class="portfolio__texts">
+                            <h3 class="portfolio__title">Proyecto - 3</h3>
+                            <h3 class="portfolio__title">Mi primera pagina web</h3>
+                            <p class="portfolio__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Minus tempore voluptatem quis in eaque obcaecati optio impedit numquam ex quos.</p>
+                            <a href="#" class="btn btn-portfolio">Más información</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- PORTFOLIO SECTION ENDS  -->
+
+
+        <!-- LANGUAGES SECTION STARTS  -->
+        <section class="languages" id="expert">
+
+            <div class="container">
+                <h2 class="title">Experto</h2>
+                <div class="languages__container">
+                    <img src="./images/html-5.svg" class="languages__picture" alt="skill-one">
+                    <img src="./images/css-3.svg" class="languages__picture" alt="skill-two">
+                    <img src="./images/JAVA.jpg" class="languages__picture" alt="skill-three">
+                    <img src="./images/Python.png" class="languages__picture" alt="skill-four">
+                </div>
+            </div>
+
+        </section>
+        <!-- LANGUAGES SECTION ENDS  -->
+
+
+    </main>
+    <!-- MAIN SECTION ENDS  -->
+
+
+
+    <!-- FOOTER SECTION STARTS  -->
+    <footer class="footer" id="contact">
+
+        <div class="footer__container container">
+
+            <div class="footer__texts">
+                <h2 class="title">Contáctame</h2>
+                <div class="footer__icons">
+                    <a href="https://www.facebook.com/Andy Quishpe" class="footer__icon fab fa-facebook-f"></a>
+                    <a href="https://www.instagram.com/Andy/"
+                        class="footer__icon fab fa-instagram"></a>
+                    <a href="https://github.com/DAQG" class="footer__icon fab fa-github"></a>
+                </div>
+                <nav class="footer__nav">
+                    <a href="#" class="footer__link">Inicio</a>
+                    <a href="#about" class="footer__link">Sobre mí</a>
+                    <a href="#portfolio" class="footer__link">Proyectos</a>
+                </nav>
+                <p class="footer__copy">Derechos reservados &copy; Portafolio de Diseño de Interfaces 2022B</p>
+
+            </div>
+
+            <figure class="footer__img">
+                <img src="./images/mail.png" class="footer__picture" alt="contactme">
+            </figure>
+
+            <div class="attribution">
+                Coded by <a href="https://github.com/DAQG">Daniel Quishpe</a>.
+            </div>
+        </div>
     </footer>
-    
+    <!-- FOOTER SECTION STARTS  -->
+    <!-- https://github.com/mattboldt/typed.js/ -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed1 = new Typed("#typed1", {
+            strings: ['¡Bienvenido a mi Portafolio!'],
+            typeSpeed: 75,
+            backDelay: 500,
+            startDelay: 2000,
+
+        });
+    </script>
+    <script>
+        var typed2 = new Typed("#typed2", {
+            strings: ['Desempeñarme en el area de trabajo de manera colectiva y aprendiendo cada dia mas y de mas de quienes me rodean'],
+            typeSpeed: 10,
+            backDelay: 500,
+            startDelay: 2000,
+
+        });
+    </script>
 </body>
+
 </html>
